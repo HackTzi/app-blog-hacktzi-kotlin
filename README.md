@@ -14,6 +14,8 @@ This is a Hacktzi Blog android app. The main purpose of this application is prov
 
 ## Architecture
 
+[Android Architecture](images/hacktzi-android-architecture.png)
+
 ## Contribution
 Feel free to contribute either by requesting or developing new features
 
@@ -74,3 +76,6 @@ In order to make the code look consistent cross modules, we have decided to come
 | Resource Dimensions | **`{where}_<what>_{description}`** | <li>**size_small**</li><li>**button_width_large**</li><li>**toolbar_height**</li><li>**notification_header_padding_top** (Works for padding & margins)</li><li>**text_size_small**</li> |
 | Resource Colors | **`<name>_<value>`** | blue_light |
 | Resource View IDs | **`<prefix> + <description>`** | <li>**ly** + Login (Any kind of layouts such as Constraints/AppBar/Linear and so on)</li><li>**btn** + Login (Any kind of button, such as Button, ImageButton, RadioButton, ToggleButton and so on)</li><li>**tv** + Username (All sort of non-editable labels such as TextViews)</li><li>**et** + Username (All sort of editable text inputs such as EditTexts)</li><li>**chk** + Policy (All views that require a check/uncheck interaction such as CheckBoxes)</li><li>**img** + Photo (All views that are used to show images such as ImageViews)</li>
+
+## Discusions
+Refer to the issues section: [https://github.com/HackTzi/app-blog-hacktzi-kotlin/issues]
