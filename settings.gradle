@@ -1,2 +1,11 @@
+include ':core:hacktzi-ui'
+include ':core:hacktzi-domain'
+include ':core:hacktzi-data'
+include ':hacktzi-activity'
+include ':hacktzi-post'
+include ':hacktzi-project'
+include ':hacktzi-news'
+include ':hacktzi-home'
+include ':hacktzi-login'
 include ':app'
 rootProject.name = "HackTzi Blog"

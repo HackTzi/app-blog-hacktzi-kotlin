@@ -1,0 +1,105 @@
+ext {
+    // Android Project Config
+    compileVersion = 30
+    buildToolsVersion = "30.0.3"
+    minVersion = 23
+    targetVersion = 30
+
+    // Dependencies
+    // Kotlin
+    kotlinCoroutinesVersion = "1.3.9"
+
+    // Android
+    coreKtxVersion = "1.3.1"
+    appCompatVersion = "1.2.0"
+    fragmentVersion = "1.3.0-rc01"
+    constraintLayoutVersion = "2.0.3"
+    materialComponentsVersion = "1.2.1"
+    navigationComponentVersion = "2.3.0"
+    preferenceVersion = "1.1.1"
+    lifecycleVersion = "2.2.0"
+
+    // Third-party libraries
+    retrofitVersion = "2.9.0"
+    okHttpVersion = "4.9.0"
+    timberVersion = "4.7.1"
+    leakCanaryVersion = "2.5"
+    debugDbVersion = "1.0.6"
+    koinVersion = "2.2.0"
+
+    // Test
+    junitVersion = "4.12"
+    androidJunitVersion = "1.1.2"
+    espressoCoreVersion = "3.3.0"
+
+    kotlinDependencies = [
+            "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
+            "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinCoroutinesVersion",
+            "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinCoroutinesVersion",
+    ]
+
+    androidUiDependencies = [
+            "androidx.core:core-ktx:$coreKtxVersion",
+            "androidx.appcompat:appcompat:$appCompatVersion",
+            "androidx.fragment:fragment-ktx:$fragmentVersion",
+            "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            "com.google.android.material:material:$materialComponentsVersion",
+            "androidx.navigation:navigation-fragment-ktx:$navigationComponentVersion",
+            "androidx.navigation:navigation-ui-ktx:$navigationComponentVersion",
+    ]
+
+    androidDataDependencies = [
+            "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            "com.squareup.okhttp3:logging-interceptor:$okHttpVersion",
+            "androidx.preference:preference-ktx:$preferenceVersion"
+    ]
+
+    debugDependencies = [
+            "com.jakewharton.timber:timber:$timberVersion",
+            "com.squareup.leakcanary:leakcanary-android:$leakCanaryVersion",
+            "com.amitshekhar.android:debug-db:$debugDbVersion"
+    ]
+
+    unitTestDependencies = [
+            "junit:junit:$junitVersion"
+    ]
+
+    androidTestDependencies = [
+            "androidx.test.ext:junit:$androidJunitVersion",
+            "androidx.test.espresso:espresso-core:$espressoCoreVersion"
+    ]
+}
+
+ext.androidLibraryConfig = {
+    compileSdkVersion rootProject.compileVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minVersion
+        targetSdkVersion rootProject.targetVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
