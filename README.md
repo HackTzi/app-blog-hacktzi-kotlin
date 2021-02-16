@@ -14,7 +14,15 @@ This is a Hacktzi Blog android app. The main purpose of this application is prov
 
 ## Architecture
 
-[Android Architecture](images/hacktzi-android-architecture.png)
+![Android Architecture](images/hacktzi-android-architecture.png)
+
+| Name | Description |
+|--|--|
+| Application | Refers to hacktzi application, it control the main execution and initialize any important dependency |
+| Module layer | All the module inside module layer are the features for hacktzi application such as login, project, news, etc. Also, take in cosideration that a module can depends on another module |
+| Core Layer - UI Module | Module which contains all the resources such as theme, styles, strings, animations, drawables, etc which will be sharing to other modules |
+| Core Layer - Domain Module | Module which contains any common classes for businness logic in other modules (e.g. use cases, POJO class, etc)|
+| Core Layer - Data Module | Module which contains elements for data sources such as network objects, common responses from endpoints, data bases, entities, etc |
 
 ## Contribution
 Feel free to contribute either by requesting or developing new features
