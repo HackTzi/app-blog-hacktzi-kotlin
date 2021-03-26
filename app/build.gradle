@@ -36,7 +36,13 @@ dependencies {
 
     implementation rootProject.ext.kotlinDependencies
     implementation rootProject.ext.androidUiDependencies
+
+
+    implementation project(rootProject.ext.module.core.ui)
+    implementation project(rootProject.ext.module.feature.hacktziLogin)
+
     debugImplementation rootProject.ext.debugDependencies
+
     testImplementation rootProject.ext.unitTestDependencies
     androidTestImplementation rootProject.ext.androidTestDependencies
 }
