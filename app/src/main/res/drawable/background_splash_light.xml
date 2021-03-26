@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <item android:drawable="@color/background_light_splash" />
+    <item android:drawable="@color/white_light" />
 
     <item
-        android:width="350dp"
-        android:height="340dp"
-        android:drawable="@drawable/hacktzilight_splash_icon"
+        android:width="@dimen/icon_splash_width"
+        android:height="@dimen/icon_splash_height"
+        android:drawable="@drawable/icon_splash_light"
         android:gravity="center" />
 
 </layer-list>
