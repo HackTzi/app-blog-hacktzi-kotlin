@@ -1,0 +1,16 @@
+ext {
+    module = [
+        feature : [
+            hacktziLogin       : ':feature:hacktzi-login',
+            hacktziHome        : ':feature:hacktzi-home',
+            hacktziNews        : ':feature:hacktzi-news',
+            hacktziProject     : ':feature:hacktzi-project',
+            hacktziPost        : ':feature:hacktzi-post'
+        ],
+        core  : [
+            ui       : ':core:hacktzi-ui',
+            domain   : ':core:hacktzi-domain',
+            data     : ':core:hacktzi-data'
+        ]
+    ]
+}
