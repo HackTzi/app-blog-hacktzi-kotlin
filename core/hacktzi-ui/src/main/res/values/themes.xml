@@ -5,5 +5,8 @@
         <item name="colorPrimary">?colorPrimary</item>
         <item name="colorPrimaryDark">?colorPrimaryDark</item>
         <item name="colorSecondary">?colorSecondary</item>
+
+        <item name="colorPrimaryButton">?colorPrimaryButton</item>
+        <item name="colorTextButton">?colorTextButton</item>
     </style>
 </resources>

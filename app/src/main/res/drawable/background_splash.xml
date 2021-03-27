@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <item android:drawable="@color/blue" />
+    <item android:drawable="@color/splash_background" />
 
     <item
         android:width="@dimen/icon_splash_width"
         android:height="@dimen/icon_splash_height"
-        android:drawable="@drawable/icon_splash_dark"
+        android:drawable="@drawable/icon_splash"
         android:gravity="center" />
 
 </layer-list>

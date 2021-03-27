@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Splash -->
+    <attr name="colorBackgroundSplash" format="color" />
+
+    <!-- Button -->
+    <attr name="colorPrimaryButton" format="color" />
+    <attr name="colorTextButton" format="color" />
+
+    <!-- Common -->
+    <attr name="colorPrimaryInverse" format="color"/>
+</resources>

@@ -12,6 +12,9 @@ dependencies {
 
     implementation rootProject.ext.kotlinDependencies
     implementation rootProject.ext.androidUiDependencies
+
+    implementation project(rootProject.ext.module.core.ui)
+
     debugImplementation rootProject.ext.debugDependencies
 
     testImplementation rootProject.ext.unitTestDependencies
